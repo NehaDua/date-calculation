@@ -19,7 +19,8 @@ public class ConfiguredBrowserInstance {
 			HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
 			chromePrefs.put("profile.default_content_settings.popups", 0);
 			ChromeOptions options = new ChromeOptions();
-			options.setBinary(BASEPATH + File.separator+"Chrome"+File.separator+"chrome.exe");
+			//options.setBinary(BASEPATH + File.separator+"Chrome"+File.separator+"chrome.exe");
+                         options.setBinary("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
 
 			options.setExperimentalOption("prefs", chromePrefs);
 			options.addArguments("start-maximized"); 
